@@ -32,22 +32,25 @@ SnowFlake 软件包目录结构如下所示：
 
 ```shell
 snowflake
-+---docs 
-│   +---figures                     // 文档使用图片
+├───docs 
+│   ├───figures                     // 文档使用图片
 │   │   api.md                      // API 使用说明
 │   │   introduction.md             // 介绍文档
 │   │   principle.md                // 实现原理
 │   │   README.md                   // 文档结构说明
 │   │   samples.md                  // 软件包示例
 │   │   user-guide.md               // 使用说明
-│   +---version.md                  // 版本
-+---inc                             // 头文件
-+---src                             // 源文件
-+---samples                         // 示例代码
-│   │   snowflake_sample        	// 获取 ID 示例代码
+│   └───version.md                  // 版本
+├───inc                             // 头文件
+├───samples                         // 示例代码
+│   └───snowflake_sample        	// 获取 ID 示例代码
+├───src                             // 源文件
 │   LICENSE                         // 软件包许可证
 │   README.md                       // 软件包使用说明
-+---SConscript                      // RT-Thread 默认的构建脚本
+│   SConscript                      // RT-Thread 默认的构建脚本
+│   snowflake.h                     // snowflake 头文件 
+│   snowflake_port.c                // snowflake_port 源文件
+└───snowflake_port.h                // snowflake_port 头文件
 ```
 
 ### 1.2 许可证

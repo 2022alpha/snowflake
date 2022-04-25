@@ -64,13 +64,13 @@ uint32_t * snowflake_malloc(uint32_t size)
 void snowflake_lock(void)
 {
     // rtthread
-    //单机运行可不考虑
+    //单线程运行可不考虑
 }
 
 void snowflake_unlock(void)
 {
     // rtthread
-    //单机运行可不考虑
+    //单线程运行可不考虑
 }
 
 /**
